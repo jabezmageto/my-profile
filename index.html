@@ -1,164 +1,109 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
+<html lang="en"><head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Jabez Mageto Mochiemo - Portfolio</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            line-height: 1.6;
-            background-color: #f4f4f4;
-        }
-
-        header {
-            background: #333;
-            color: #fff;
-            padding: 1rem 0;
-            text-align: center;
-        }
-
-        header h1 {
-            margin: 0;
-            font-size: 2.5rem;
-        }
-
-        nav {
-            display: flex;
-            justify-content: center;
-            background: #444;
-            padding: 0.5rem 0;
-        }
-
-        nav a {
-            color: #fff;
-            text-decoration: none;
-            margin: 0 15px;
-            font-size: 1.1rem;
-        }
-
-        nav a:hover {
-            text-decoration: underline;
-        }
-
-        .container {
-            max-width: 1100px;
-            margin: auto;
-            overflow: hidden;
-            padding: 2rem;
-        }
-
-        .section {
-            margin-bottom: 2rem;
-        }
-
-        .section h2 {
-            color: #333;
-            margin-bottom: 1rem;
-        }
-
-        .chart-container {
-            max-width: 600px;
-            margin: 2rem auto;
-        }
-
-        footer {
-            background: #333;
-            color: #fff;
-            text-align: center;
-            padding: 1rem 0;
-            margin-top: 2rem;
-        }
-
-        footer p {
-            margin: 0;
-        }
-    </style>
 </head>
 <body>
-    <header>
+    <header class="bg-dark text-white text-center py-4">
         <h1>Jabez Mageto Mochiemo</h1>
         <p>Software Developer | Cybersecurity Specialist | Full-Stack Developer</p>
     </header>
 
-    <nav>
-        <a href="#about">About</a>
-        <a href="#skills">Skills</a>
-        <a href="#projects">Projects</a>
-        <a href="#contact">Contact</a>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-secondary">
+        <div class="container">
+            <a class="navbar-brand" href="#">Portfolio</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </div>
     </nav>
 
-    <div class="container">
+    <div class="container my-5">
         <!-- About Section -->
-        <section id="about" class="section">
-            <h2>About Me</h2>
-            <p>I am a passionate software developer with expertise in app development, web applications, mobile applications, and systems. With a diploma in Business Information Technology and Cisco certification in cybersecurity and networking, I have developed innovative solutions, including an e-commerce system, an online rental management platform, and a consumer-police communication app currently in progress.</p>
+        <section id="about" class="mb-5">
+            <h2 class="text-center mb-4">About Me</h2>
+            <p class="text-center">I am a passionate software developer with expertise in app development, web applications, mobile applications, and systems. With a diploma in Business Information Technology and Cisco certification in cybersecurity and networking, I have developed innovative solutions, including an e-commerce system, an online rental management platform, and a consumer-police communication app currently in progress.</p>
         </section>
 
         <!-- Skills Section -->
-        <section id="skills" class="section">
-            <h2>Technical Skills</h2>
-            <div class="chart-container">
-                <canvas id="skillsChart"></canvas>
+        <section id="skills" class="mb-5">
+            <h2 class="text-center mb-4">Technical Skills</h2>
+            <div class="row">
+                <div class="col-md-4 mb-3">
+                    <div class="progress">
+                        <div class="progress-bar bg-success" role="progressbar" style="width: 85%;" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100">R Programming - 85%</div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-3">
+                    <div class="progress">
+                        <div class="progress-bar bg-info" role="progressbar" style="width: 85%;" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100">CSS - 85%</div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-3">
+                    <div class="progress">
+                        <div class="progress-bar bg-warning" role="progressbar" style="width: 80%;" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100">JavaScript - 80%</div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-3">
+                    <div class="progress">
+                        <div class="progress-bar bg-danger" role="progressbar" style="width: 75%;" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">PHP - 75%</div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-3">
+                    <div class="progress">
+                        <div class="progress-bar bg-primary" role="progressbar" style="width: 70%;" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100">SQL - 70%</div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-3">
+                    <div class="progress">
+                        <div class="progress-bar bg-secondary" role="progressbar" style="width: 65%;" aria-valuenow="65" aria-valuemin="0" aria-valuemax="100">Java - 65%</div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-3">
+                    <div class="progress">
+                        <div class="progress-bar bg-secondary" role="progressbar" style="width: 65%;" aria-valuenow="65" aria-valuemin="0" aria-valuemax="100">Python - 75%</div>
+                    </div>
+                </div>
             </div>
         </section>
 
         <!-- Projects Section -->
-        <section id="projects" class="section">
-            <h2>Projects</h2>
-            <ul>
-                <li><strong>E-Commerce System:</strong> Designed for seamless online transactions, currently in final testing.</li>
-                <li><strong>Online Rental Management System:</strong> A platform for managing tenant-landlord interactions, including payments and complaints.</li>
-                <li><strong>Real Estate Platform:</strong> A user-friendly platform for property advertising with advanced filtering options.</li>
-                <li><strong>Consumer-Police Communication App:</strong> An ongoing project to enhance public safety through real-time reporting and dispatch.</li>
+        <section id="projects" class="mb-5">
+            <h2 class="text-center mb-4">Projects</h2>
+            <ul class="list-group">
+                <li class="list-group-item"><strong>E-Commerce System:</strong> Designed for seamless online transactions, currently in final testing.</li>
+                <li class="list-group-item"><strong>Online Rental Management System:</strong> A platform for managing tenant-landlord interactions, including payments and complaints.</li>
+                <li class="list-group-item"><strong>Real Estate Platform:</strong> A user-friendly platform for property advertising with advanced filtering options.</li>
+                <li class="list-group-item"><strong>Consumer-Police Communication App:</strong> An ongoing project to enhance public safety through real-time reporting and dispatch.</li>
             </ul>
         </section>
 
         <!-- Contact Section -->
-        <section id="contact" class="section">
-            <h2>Contact</h2>
-            <p><strong>Email:</strong> jabezmageto78@gmail.com</p>
-            <p><strong>Phone:</strong> 0768396296</p>
-            <p><strong>Address:</strong> 1877</p>
+        <section id="contact" class="mb-5">
+            <h2 class="text-center mb-4">Contact</h2>
+            <div class="text-center">
+                <p><strong>Email:</strong> jabezmageto78@gmail.com</p>
+                <p><strong>Phone:</strong> 0768396296</p>
+                <p><strong>Address:</strong> 1877</p>
+            </div>
         </section>
     </div>
 
-    <footer>
-        <p>&copy; 2025 Jabez Mageto Mochiemo. All rights reserved.</p>
+    <footer class="bg-dark text-white text-center py-3">
+        <p>© 2025 Jabez Mageto Mochiemo. All rights reserved.</p>
     </footer>
 
-    <script>
-        const ctx = document.getElementById('skillsChart').getContext('2d');
-        const skillsChart = new Chart(ctx, {
-            type: 'bar',
-            data: {
-                labels: ['R Programming', 'CSS', 'JavaScript', 'PHP', 'SQL', 'Java'],
-                datasets: [{
-                    label: 'Proficiency (%)',
-                    data: [85, 85, 80, 75, 70, 65],
-                    backgroundColor: ['#4CAF50', '#2196F3', '#FFC107', '#FF5722', '#9C27B0', '#00BCD4'],
-                }]
-            },
-            options: {
-                responsive: true,
-                plugins: {
-                    legend: {
-                        display: true,
-                        position: 'top',
-                    },
-                },
-                scales: {
-                    y: {
-                        beginAtZero: true,
-                        max: 100,
-                    }
-                }
-            }
-        });
-    </script>
-</body>
-</html>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"></script>
+
+
+</body></html>
