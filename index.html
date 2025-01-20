@@ -4,158 +4,161 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Jabez Mageto Mochiemo - Portfolio</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     <style>
         body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    line-height: 1.6;
-}
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+            background-color: #f4f4f4;
+        }
 
-.container {
-    width: 80%;
-    margin: auto;
-    overflow: hidden;
-}
+        header {
+            background: #333;
+            color: #fff;
+            padding: 1rem 0;
+            text-align: center;
+        }
 
-header {
-    background: white;
-    color: #fff;
-    padding-top: 30px;
-    min-height: 70px;
-    border-bottom: #0779e4 3px solid;
-}
+        header h1 {
+            margin: 0;
+            font-size: 2.5rem;
+        }
 
-header a {
-    color: #fff;
-    text-decoration: none;
-    text-transform: uppercase;
-    font-size: 16px;
-}
+        nav {
+            display: flex;
+            justify-content: center;
+            background: #444;
+            padding: 0.5rem 0;
+        }
 
-header ul {
-    padding: 0;
-    list-style: none;
-}
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 15px;
+            font-size: 1.1rem;
+        }
 
-header ul li {
-    display: inline;
-    padding: 0 20px 0 20px;
-}
+        nav a:hover {
+            text-decoration: underline;
+        }
 
-h1, h2, h3 {
-    color: #333;
-}
+        .container {
+            max-width: 1100px;
+            margin: auto;
+            overflow: hidden;
+            padding: 2rem;
+        }
 
-#about, #skills, #projects, #contact {
-    padding: 20px 0;
-}
+        .section {
+            margin-bottom: 2rem;
+        }
 
-.skills-list {
-    list-style: none;
-    padding: 0;
-}
+        .section h2 {
+            color: #333;
+            margin-bottom: 1rem;
+        }
 
-.skills-list li {
-    background: #f4f4f4;
-    margin-bottom: 5px;
-    padding: 10px;
-    border-left: #0779e4 5px solid;
-}
+        .chart-container {
+            max-width: 600px;
+            margin: 2rem auto;
+        }
 
-.project {
-    margin-bottom: 20px;
-}
+        footer {
+            background: #333;
+            color: #fff;
+            text-align: center;
+            padding: 1rem 0;
+            margin-top: 2rem;
+        }
 
-.project-link {
-    display: inline-block;
-    margin-top: 10px;
-    padding: 10px 20px;
-    background: #0779e4;
-    color: #fff;
-    text-decoration: none;
-    border-radius: 5px;
-}
-
-footer {
-    background: #333;
-    color: #fff;
-    text-align: center;
-    padding: 20px 0;
-    margin-top: 20px;
-}
-
-.contact-info {
-    list-style: none;
-    padding: 0;
-}
-
-.contact-info li {
-    margin-bottom: 10px;
-}
-
+        footer p {
+            margin: 0;
+        }
     </style>
 </head>
 <body>
-<header>
+    <header>
+        <h1>Jabez Mageto Mochiemo</h1>
+        <p>Software Developer | Cybersecurity Specialist | Full-Stack Developer</p>
+    </header>
+
+    <nav>
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+    </nav>
+
     <div class="container">
-        <div class="header-content">
-            <img src="profile.jpeg" alt="Profile Picture" class="profile-pic">
-            <div class="header-text">
-                <h1>Jabez Mageto Mochiemo</h1>
-                <p>Full-Stack Developer | Cybersecurity Specialist | App Developer</p>
-            </div>
-        </div>
-        <nav>
-            <ul>
-                <li><a href="#about">About Me</a></li>
-                <li><a href="#skills">Skills</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
-    </div>
-</header>
-    <section id="about">
-        <div class="container">
+        <!-- About Section -->
+        <section id="about" class="section">
             <h2>About Me</h2>
-            <p>
-                I am a passionate software developer with expertise in full-stack web development, cybersecurity, and networking. With a diploma in Business Information Technology from Zetech University and Cisco certification in cybersecurity and networking, I am committed to developing innovative solutions to meet clients' needs.
-            </p>
-            <p>
-                I have worked on various projects, including an online rental management system and a platform for selling houses, shops, and offices. I am constantly looking for new challenges to improve my skills and contribute to the tech community.
-            </p>
-            <p>
-                I played a key role in designing and developing the Spark Data Impact website, a platform aimed at providing comprehensive data analytics services for enterprises across various sectors. This project involved the integration of cloud services and big data analytics to help businesses optimize their data-driven strategies.
-            </p>
-        </div>
-    </section>
-    <section id="skills">
-        <div class="container">
-            <h2>Skills</h2>
-            <ul class="skills-list">
-                <li>Full-Stack Web Development</li>
-                <li>Cybersecurity</li>
-                <li>Networking</li>
-                <li>App Development</li>
-                <li>Database Management (MySQL, SQL)</li>
-                <li>HTML, CSS, JavaScript, PHP, Java</li>
+            <p>I am a passionate software developer with expertise in app development, web applications, mobile applications, and systems. With a diploma in Business Information Technology and Cisco certification in cybersecurity and networking, I have developed innovative solutions, including an e-commerce system, an online rental management platform, and a consumer-police communication app currently in progress.</p>
+        </section>
+
+        <!-- Skills Section -->
+        <section id="skills" class="section">
+            <h2>Technical Skills</h2>
+            <div class="chart-container">
+                <canvas id="skillsChart"></canvas>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects" class="section">
+            <h2>Projects</h2>
+            <ul>
+                <li><strong>E-Commerce System:</strong> Designed for seamless online transactions, currently in final testing.</li>
+                <li><strong>Online Rental Management System:</strong> A platform for managing tenant-landlord interactions, including payments and complaints.</li>
+                <li><strong>Real Estate Platform:</strong> A user-friendly platform for property advertising with advanced filtering options.</li>
+                <li><strong>Consumer-Police Communication App:</strong> An ongoing project to enhance public safety through real-time reporting and dispatch.</li>
             </ul>
-        </div>
-    </section>
-    
-    
-    <section id="contact">
-        <div class="container">
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="section">
             <h2>Contact</h2>
-            <p>If you would like to get in touch, please feel free to reach out via email or phone.</p>
-            <ul class="contact-info">
-                <li>Email: <a href="mailto:jabezmageto78@gmail.com">jabezmageto78@gmail.com</a></li>
-                <li>Phone: <a href="tel:+254768396296">+254768396296</a></li>
-                <li>LinkedIn: <a href="https://www.linkedin.com/in/jabez-mageto-755676273/?lipi=urn%3Ali%3Apage%3Ad_flagship3_feed%3BHxNAWsy2S9CKubHcFBVGgw%3D%3D">LinkedIn Profile</a></li>
-                <li>GitHub: <a href="https://github.com/jabezmageto/real-estate">GitHub Profile</a></li>
-            </ul>
-        </div>
-    </section>
-                
+            <p><strong>Email:</strong> jabezmageto78@gmail.com</p>
+            <p><strong>Phone:</strong> 0768396296</p>
+            <p><strong>Address:</strong> 1877</p>
+        </section>
+    </div>
+
+    <footer>
+        <p>&copy; 2025 Jabez Mageto Mochiemo. All rights reserved.</p>
+    </footer>
+
+    <script>
+        const ctx = document.getElementById('skillsChart').getContext('2d');
+        const skillsChart = new Chart(ctx, {
+            type: 'bar',
+            data: {
+                labels: ['R Programming', 'CSS', 'JavaScript', 'PHP', 'SQL', 'Java'],
+                datasets: [{
+                    label: 'Proficiency (%)',
+                    data: [85, 85, 80, 75, 70, 65],
+                    backgroundColor: ['#4CAF50', '#2196F3', '#FFC107', '#FF5722', '#9C27B0', '#00BCD4'],
+                }]
+            },
+            options: {
+                responsive: true,
+                plugins: {
+                    legend: {
+                        display: true,
+                        position: 'top',
+                    },
+                },
+                scales: {
+                    y: {
+                        beginAtZero: true,
+                        max: 100,
+                    }
+                }
+            }
+        });
+    </script>
+</body>
+</html>
